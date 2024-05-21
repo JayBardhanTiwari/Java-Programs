@@ -1,18 +1,16 @@
 public class LargestNumber {
     public static void main(String[] args) {
-        int a= 14;
-        int b= 88;
+        int a = 14;
+        int b = 88;
         int c = 100;
-        if (a>b&&a>c){
+        if (a > b && a > c) {
 
             System.out.println(a);
-        }
-        else if(b>a && b>c){
+        } else if (b > a && b > c) {
             System.out.println(b);
-        }
-        else{
+        } else {
             System.err.println(c);
         }
     }
-    
+
 }
