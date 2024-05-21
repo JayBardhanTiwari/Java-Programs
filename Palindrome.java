@@ -2,7 +2,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        int palin = 123321;
+        int palin = 123;
         int original = palin;
         int reverse = 0;
 
@@ -12,7 +12,7 @@ public class Palindrome {
             palin = palin / 10;
 
         }
-        System.out.println(palin);
+       
         System.out.println(reverse);
         if (original == reverse) {
             System.out.println("is palindrome");
