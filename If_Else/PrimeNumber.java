@@ -1,19 +1,24 @@
 package If_Else;
+
 public class PrimeNumber {
     public static void main(String[] args) {
 
-        int num = 7;
-        int count = 0;
-
-        for (int i = 1; i <= num; i++) {
-            if (num % i == 0) {
-                count++;
+        for (int number = 1; number < 100; number++) {
+            if (number == 1) {
+                System.out.println(number);
+                continue;
             }
-        }
-        if (count == 2) {
-            System.out.println("prime number");
-        } else {
-            System.out.println("not prime number");
+            boolean isprime = true;
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isprime = false;
+
+                }
+            }
+            if (isprime) {
+                System.out.print(number);
+                System.out.print(" ");
+            }
         }
     }
 }
