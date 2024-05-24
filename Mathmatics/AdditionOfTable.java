@@ -26,4 +26,4 @@ public class AdditionOfTable {
     }
 
 }
-//how to print values aligned in cloumns
+
