@@ -1,3 +1,4 @@
+package Mathmatics;
 public class PrintNumberwithGap {
     public static void main(String[] args) {
 
