@@ -1,25 +1,32 @@
 package Loops;
-
-public class DiamondStar {
+public class DiamondStar
+{
     public static void main(String[] args) {
-        int maxstar = 7;
-
-        for (int outer = 1; outer <= maxstar; outer++) {
-            int value = outer % 2;
-            if (value != 0) {
-                int space = (maxstar - outer) / 2;
-                for (int s = 0; s < space; s++) {
-                    System.out.print(" ");
-                }
-
-                for (int inner = 1; inner <= outer; inner++) {
-
-                    System.out.print("*");
-
-                }
-                System.out.println();
-            }
+      	int spaceCount = 3, spacedec = 1;
+		for(int i = 1; i<6; ){
+          spacedec++;
+          for(int j = spaceCount - spacedec; j >= 0; j--){
+            System.out.print(" ");
+          }
+          for(int inner = 1;inner <= i;inner++){
+            System.out.print("*");
+          }
+          System.out.println();
+          i+=2;
         }
-
-    }
+        
+        spacedec = 3;
+ 
+        for(int i = 3; i>0 ; ){
+          spacedec--;
+          for(int j = spaceCount - spacedec; j >= 1; j--){
+            System.out.print(" ");
+          }
+          for(int inner = i;inner >= 1;inner--){
+            System.out.print("*");
+          }
+          System.out.println();
+          i-=2;
+        }
+	}
 }
