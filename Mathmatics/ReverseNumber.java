@@ -3,7 +3,7 @@ package Mathmatics;
 public class ReverseNumber {
     public static void main(String[] args) {
 
-        int num = 123;
+        int num = 234;
         int reverse = 0;
         while (num > 0) {
             int rem = num % 10;
