@@ -2,10 +2,12 @@ package Loops;
 
 public class  StringProgram {
     public static void main(String[] args) {
-        String name = "jay";
-        String title = "coder";
-        String total = name + title;
-        System.out.println(total);
-        
+        //String myStr = "abcdefghijklmnopqrstuvwxyz";
+        String myStr = "ABCDEFGHIJKLMANO";
+        for(int i=0;i<myStr.length();i++){
+            int result = myStr.codePointAt(i);
+            System.out.println(result);
+        }
+       
     }
 }
