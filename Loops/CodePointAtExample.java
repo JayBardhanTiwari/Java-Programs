@@ -1,6 +1,6 @@
 package Loops;
 
-public class  StringProgram {
+public class  CodePointAtExample {
     public static void main(String[] args) {
         //String myStr = "abcdefghijklmnopqrstuvwxyz";
         String myStr = "ABCDEFGHIJKLMANO";
