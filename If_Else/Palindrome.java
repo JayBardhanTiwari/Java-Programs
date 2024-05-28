@@ -3,7 +3,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        int palin = 1231;
+        int palin = 121;
         int original = palin;
         int reverse = 0;
 

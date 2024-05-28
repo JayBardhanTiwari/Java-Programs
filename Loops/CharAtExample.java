@@ -7,7 +7,7 @@ public class CharAtExample {
         char ch = agent.charAt(4);
         System.out.println("The value at index 4 is " + ch);
 
-        // Example 2 first and last index
+        // Example 2 Print the character at first and last index
         String game = "Valorant";
         System.out.println("The value at index 0 is " + game.charAt(0));
         System.out.println("The value at last index is " + game.charAt(game.length() - 1));
