@@ -2,6 +2,8 @@ package JavaBasics;
 
 public class Variables {
     public static void main(String[] args) {
+
+        // Its the way of how to creat Variable in Java Programming Language
         
         int a = 10;
         int b = 60;
