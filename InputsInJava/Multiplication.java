@@ -8,8 +8,8 @@ public class Multiplication {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int multiply = a * b ;
-        System.out.println(multiply);
+        int product = a * b ;
+        System.out.println(product);
     }
 
 }
