@@ -5,14 +5,10 @@ import java.util.*;// Importing a package  named util
 public class IntputInJava {
     public static void main(String[] args) {
 
+        //  Creating a Scanner object 
         Scanner sc = new Scanner(System.in); 
-        String input = sc.next(); // Now its stores a single word input
 
-        /*
-         Creating a object and
-           for taking input we have to write System.in
-         */
-
+        String input = sc.next(); // .next()  stores a single word input
         System.out.println(input);
 
         String name = sc.nextLine();// nextline can stores Names,Paragraphs,Sentences
