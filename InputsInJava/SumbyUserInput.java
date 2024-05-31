@@ -1,4 +1,4 @@
-package JavaBasics;
+package InputsInJava;
 import java.util.Scanner;
 
 public class SumbyUserInput {

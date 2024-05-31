@@ -1,8 +1,8 @@
-package JavaBasics;
+package InputsInJava;
 
 import java.util.*;// Importing a package  named util
 
-public class IntputInJava {
+public class Initialization {
     public static void main(String[] args) {
 
         //  Creating a Scanner object 
