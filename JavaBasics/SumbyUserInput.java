@@ -5,10 +5,10 @@ public class SumbyUserInput {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        int value = sc.nextInt();
-        int value2 = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        int sum = value + value2 ;
+        int sum = a + b ;
         System.out.println(sum);
     }
 }
