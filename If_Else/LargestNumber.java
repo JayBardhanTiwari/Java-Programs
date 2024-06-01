@@ -2,17 +2,17 @@ package If_Else;
 
 public class LargestNumber {
     public static void main(String[] args) {
-        int a = 140;
-        int b = 101;
-        int c = 100;
+        int a = 100;
+        int b = 120;
+        int c = 140;
         // Add operators means if both conditions are true
         if (a > b && a > c) {
 
-            System.out.println(a);
-        } else if (b > a && b > c) {
-            System.out.println(b);
+            System.out.println("Largest is a");
+        } else if (b >= c) {
+            System.out.println("Largest is b");
         } else {
-            System.out.println(c);
+            System.out.println("Largest is c");
         }
     }
 
