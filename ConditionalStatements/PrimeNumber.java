@@ -1,4 +1,4 @@
-package If_Else;
+package ConditionalStatements;
 
 public class PrimeNumber {
     public static void main(String[] args) {

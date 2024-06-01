@@ -1,4 +1,4 @@
-package If_Else;
+package ConditionalStatements;
 public class Palindrome {
 
     public static void main(String[] args) {
