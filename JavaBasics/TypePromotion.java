@@ -8,11 +8,11 @@ public class TypePromotion {
         // 1.Java automatically promotes each byte,short and char operand to int when
         // evaluating an expression.
 
-        // char a = 'a';
-        // char b ='b';
-        // System.out.println((int) a);// type casting
-        // System.out.println((int) b);
-        // System.out.println(b - a); // here the a and b will convert it into int
+        char a = 'a';
+        char b ='b';
+        System.out.println((int) a); //type casting
+        System.out.println((int) b);
+        System.out.println(b - a);  //here the a and b will convert it into int
         // automatically
 
         short s = 10;

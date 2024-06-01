@@ -15,7 +15,7 @@ public class TypeCaasting {
         int b = (int) a;
         System.out.println(b);
         // But remember after decimal values the data will be lost and it stores only 10
-        // .
+        
 
     }
 }

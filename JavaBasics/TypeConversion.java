@@ -4,7 +4,7 @@ public class TypeConversion {
     public static void main(String[] args) {
 
         // for type conversion there are two condition you have to follow
-        // 1. Type Compatible
+        // 1.Type Compatible
         // 2.Destination type > Source type
 
         int a = 10;
