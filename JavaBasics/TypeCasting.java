@@ -1,6 +1,6 @@
 package JavaBasics;
 
-public class TypeCaasting {
+public class TypeCasting {
     public static void main(String[] args) {
 
         // Type casting
