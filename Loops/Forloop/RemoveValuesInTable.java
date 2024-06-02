@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 public class RemoveValuesInTable {
     public static void main(String[] args) {
 

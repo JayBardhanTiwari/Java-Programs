@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 public class Tableof2 {
     public static void main(String[] args) {
 

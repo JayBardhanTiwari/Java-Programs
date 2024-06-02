@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 public class DiamondStar
 {
     public static void main(String[] args) {

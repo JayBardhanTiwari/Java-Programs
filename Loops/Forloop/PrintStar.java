@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 public class PrintStar {
     public static void main(String[] args) {
         for (int outer = 1; outer <= 5; outer++) {

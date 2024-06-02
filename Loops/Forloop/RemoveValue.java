@@ -1,4 +1,5 @@
-package Loops;
+package Loops.Forloop
+;
 public class RemoveValue {
     public static void main(String[] args) {
 

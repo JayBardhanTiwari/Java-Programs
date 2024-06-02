@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Whileloop;
 
 public class Printmultiple {
     public static void main(String[] args) {

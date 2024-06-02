@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 public class TotalTable {
     public static void main(String[] args) {
         int total = 0;

@@ -1,4 +1,4 @@
-package Loops;
+package Loops.Forloop;
 
 // Main class
 public class StringPalindrome {
