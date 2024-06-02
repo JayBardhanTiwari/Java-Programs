@@ -1,6 +1,6 @@
 package OperatorsInJava;
 
-public class ReverseNumber {
+public class ReversethegivenNumber {
     public static void main(String[] args) {
 
         int num = 8997;
@@ -9,8 +9,9 @@ public class ReverseNumber {
             int rem = num % 10;
             reverse = reverse * 10 + rem;
             num = num / 10;
-            System.out.println(reverse);
 
         }
+        System.out.println(reverse);
+
     }
 }
