@@ -1,4 +1,4 @@
-package Loops;
+package Printmultipletimes.java;
 public class RemoveValue {
     public static void main(String[] args) {
 
