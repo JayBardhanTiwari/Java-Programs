@@ -12,7 +12,7 @@ public class SumofFirstNnaturalNumber {
         int sum = 0;
 
         while (i <= range) {
-            sum = sum + i;
+            sum += i;
             i++;
 
         }
