@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 public class SwapingValues {
     public static void main(String[] args) {
         int a = 10;

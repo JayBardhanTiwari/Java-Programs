@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 public class TimeProgram {
     public static void main(String[] args) {
         int time = 24;

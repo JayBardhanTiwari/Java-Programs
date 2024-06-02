@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 public class FindSpeed {
     public static void main(String[] args) {
         int distance = 100;

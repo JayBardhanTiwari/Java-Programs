@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 public class PrintNumberwithGap {
     public static void main(String[] args) {
 

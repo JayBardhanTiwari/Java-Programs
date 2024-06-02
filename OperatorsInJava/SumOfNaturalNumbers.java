@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 
 public class SumOfNaturalNumbers {
     public static void main(String[] args) {

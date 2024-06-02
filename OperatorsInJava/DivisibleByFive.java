@@ -1,4 +1,5 @@
-package Mathmatics;
+package OperatorsInJava;
+
 public class DivisibleByFive {
     public static void main(String[] args) {
         for (int i = 1; i < 11; i++) {

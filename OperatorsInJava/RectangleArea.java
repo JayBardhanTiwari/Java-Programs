@@ -1,4 +1,4 @@
-package Mathmatics;
+package OperatorsInJava;
 public class RectangleArea {
     public static void main(String[] args) {
         int length = 10;
