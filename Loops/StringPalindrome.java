@@ -1,4 +1,4 @@
-package Printmultipletimes.java;
+package Loops;
 
 // Main class
 public class StringPalindrome {
