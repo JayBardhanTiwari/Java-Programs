@@ -1,4 +1,4 @@
-package Loops.Forloop;
+package Patterns;
 
 public class InvertedPyramid {
     public static void main(String[] args) {
