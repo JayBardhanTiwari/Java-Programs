@@ -1,6 +1,6 @@
 package Functions_Methods.Patterns_Advanced;
 
-public class InvertedndRotatedhalfPyramid {
+public class InvertedAndRotatedhalfPyramid {
     public static void Inverted_rotated_half_pyramid(int n) {
         // outer loop
         for (int i = 1; i <= n; i++) {
