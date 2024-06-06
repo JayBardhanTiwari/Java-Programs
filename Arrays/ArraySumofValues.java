@@ -1,4 +1,4 @@
-public class ArraySumofValues {
+public class ArraySumofvalues {
     public static void main(String[] args) {
         int largest[] = { 50, 7, 9, 12, 55, 78, 4, 0 };
         
