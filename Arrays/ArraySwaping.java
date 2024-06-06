@@ -1,4 +1,4 @@
-public class Array {
+public class ArraySwaping {
     public static void main(String args[]) {
 
         int five[] = new int[5];
