@@ -1,4 +1,9 @@
 public class BinarySearch {
+    /*
+     * Binary search
+     * Time complexity -- O(log n)
+     * Space complexity -- O(1)
+     */
     public static int Binary_Search(int number[], int key) {
 
         int start = 0;
@@ -9,7 +14,7 @@ public class BinarySearch {
             if (number[mid] == key) {
                 return mid;
             }
-            if (number[mid] < key) {// right 
+            if (number[mid] < key) {// right
                 start = mid + 1;
             } else {// left
                 end = mid - 1;
