@@ -1,4 +1,9 @@
 public class LinearSearch {
+    /*
+     * Linear search
+     * Time complexcity -- O(n)
+     * Space complexity -- O(1)
+     */
 
     public static int linearSearch(int numbers[], int key) {
 
