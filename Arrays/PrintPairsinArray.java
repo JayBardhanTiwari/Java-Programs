@@ -1,5 +1,5 @@
 public class PrintPairsinArray {
-    // Time complexcity -- O(n²)
+    // Time complexity -- O(n²)
 
     public static void printPairs(int number[]) {
         int tp = 0;
