@@ -1,10 +1,10 @@
 package MaxSubArraySum;
 
-public class UsingPrefixSubArray {
+public class UsingPrefixSum {
 
     // Time complexity = O(n²)
 
-    public static void prefixSubarray(int number[]) {
+    public static void prefix_Sum(int number[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
         int prefix[] = new int[number.length];
@@ -32,6 +32,6 @@ public class UsingPrefixSubArray {
 
     public static void main(String[] args) {
         int number[] = { 1, -2, 6, -1, 3 };
-        prefixSubarray(number);
+        prefix_Sum(number);
     }
 }
