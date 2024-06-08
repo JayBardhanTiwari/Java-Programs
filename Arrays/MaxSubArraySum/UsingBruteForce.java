@@ -1,6 +1,8 @@
+package MaxSubArraySum;
 
-public class MaxSubArraySum {
+public class UsingBruteForce {
     // Time complexity = O(n³)
+    
 
     public static void maxSubarraySum(int number[]) {
         int maxSum = Integer.MIN_VALUE;
