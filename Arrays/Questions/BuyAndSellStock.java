@@ -1,4 +1,5 @@
 package Questions;
+
 public class BuyAndSellStock {
     public static int buysellStocks(int[] prices) {
 
@@ -18,7 +19,13 @@ public class BuyAndSellStock {
     }
 
     public static void main(String[] args) {
+        // test cases
+
         int prices[] = { 7, 1, 5, 3, 6, 4 };
-        System.out.println(buysellStocks(prices));
+        int prices1[] = { 7, 6, 4, 3, 1 };
+
+        System.out.println(buysellStocks(prices));// Output: 5
+        System.out.println(buysellStocks(prices1));//  Output: 0
+
     }
 }

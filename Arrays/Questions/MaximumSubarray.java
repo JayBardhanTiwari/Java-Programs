@@ -19,8 +19,13 @@ public class MaximumSubarray {
     }
 
     public static void main(String[] args) {
+        // test cases
+
         int nums[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-        System.out.println(maxSubarrays(nums));
+        int nums2[] = { -1 };
+
+        System.out.println(maxSubarrays(nums));// Output: 6
+        System.out.println(maxSubarrays(nums2));// Output: -1
 
     }
 }

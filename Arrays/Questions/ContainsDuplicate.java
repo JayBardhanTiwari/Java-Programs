@@ -14,8 +14,14 @@ public class ContainsDuplicate {
     }
 
     public static void main(String[] args) {
+        // test cases
+
         int nums[] = { 1, 2, 3, 6, 4 };
-        System.out.println(duplicateArrays(nums));
+        int nums2[] = { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
+
+        System.out.println(duplicateArrays(nums));// Output: false
+        System.out.println(duplicateArrays(nums2));// Output: true
+
     }
 
 }
