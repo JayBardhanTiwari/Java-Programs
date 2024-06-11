@@ -1,4 +1,5 @@
 package Questions;
+
 public class TrappedWater {
 
     public static int trappedWater(int height[]) {
@@ -29,8 +30,13 @@ public class TrappedWater {
     }
 
     public static void main(String[] args) {
+        // Test cases
+
         int height[] = { 4, 2, 0, 6, 3, 2, 5 };
-        System.out.println(trappedWater(height));
+        int height2[] = { 4, 2, 0, 3, 2, 5 };
+
+        System.out.println(trappedWater(height));// Output: 11
+        System.out.println(trappedWater(height2));// Output: 9
 
     }
 }
