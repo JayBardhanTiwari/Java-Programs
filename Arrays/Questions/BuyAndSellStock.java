@@ -1,3 +1,4 @@
+package Questions;
 public class BuyAndSellStock {
     public static int buysellStocks(int[] prices) {
 

@@ -1,3 +1,4 @@
+package Questions;
 public class TrappedWater {
 
     public static int trappedWater(int height[]) {

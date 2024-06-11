@@ -1,3 +1,4 @@
+package Questions;
 public class NumberOfGoodPair {
         public static int numIdenticalPairs(int[] nums) {
                   int tp = 0;
