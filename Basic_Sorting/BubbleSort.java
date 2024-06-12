@@ -3,15 +3,20 @@ package Basic_Sorting;
 public class BubbleSort {
     public static void bubbleSort(int nums[]) {
         for (int i = 0; i < nums.length - 1; i++) {
+            int swapcount = 0;
             for (int j = 0; j < nums.length - 1 - i; j++) {
                 if (nums[j] > nums[j + 1]) {
-                    //swap
+                    // swap
                     int temp = nums[j + 1];
                     nums[j + 1] = nums[j];
                     nums[j] = temp;
+                    swapcount++;
 
                 }
             }
+            // If no swaps were made, the array is already sorted
+            if (swapcount == 0)
+                break;
         }
     }
 
