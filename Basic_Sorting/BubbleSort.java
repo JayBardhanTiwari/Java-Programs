@@ -28,8 +28,8 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int num[] = { 5, 4, 1, 3, 2 };
-        bubbleSort(num);
-        printArray(num);
+        int nums[] = { 5, 4, 1, 3, 2 };
+        bubbleSort(nums);
+        printArray(nums);
     }
 }

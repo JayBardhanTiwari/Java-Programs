@@ -23,8 +23,8 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int num[] = { 5, 4, 1, 3, 2 };
-        selectionSort(num);
-        printArray(num);
+        int nums[] = { 5, 4, 1, 3, 2 };
+        selectionSort(nums);
+        printArray(nums);
     }
 }
