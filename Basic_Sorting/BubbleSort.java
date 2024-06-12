@@ -1,4 +1,5 @@
 package Basic_Sorting;
+// Time complexity O(n)
 
 public class BubbleSort {
     public static void bubbleSort(int nums[]) {
