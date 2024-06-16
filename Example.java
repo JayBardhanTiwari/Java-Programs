@@ -1,44 +1,39 @@
 public class Example {
-    public static int compare(int heights[]) {
-
-      
-        int largest = Integer.MIN_VALUE;
-        for (int i = 0; i < heights.length; i++) {
-            largest = Math.max(largest, heights[i]);
-
-        }
-        int exprexted[] = new int[largest + 1];
-        for (int i = 0; i < heights.length; i++) {
-            exprexted[heights[i]]++;
-
-        }
-        //sorting
-        int j= 0;
-        int count = 0;
-        for(int i = 0;i<exprexted.length;i++){
-            while(exprexted[i]>0){
-                heights[j] = i;
-                j++;
-                exprexted[i]--;
-                if(heights[i] != exprexted[i]){
-                    count++;
+    public static void arrayPairSum(int[] nums) {
+        // Sorting
+        for (int i = 0; i < nums.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[min] > nums[j]) {
+                    min = j;
                 }
+             
             }
+            int temp = nums[min];
+            nums[min] = nums[i];
+            nums[i] = temp;
         }
-       
-     
-        return count;
+    //     int sum = 0;
+    //     for (int i = 0; i < nums.length; i += 2) {
+    //         if (i + 1 < nums.length) {
+    //             sum += Math.min(nums[i], nums[i + 1]);
+    //         }
+    //     }
+
+    //     return sum;
 
     }
 
-    public static void printarray(int heights[]) {
-        for (int i = 0; i < heights.length; i++) {
-            System.out.print(heights[i] + " ");
+    public static void printArray(int nums[]) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
         }
     }
 
     public static void main(String[] args) {
-        int heights[] = { 1, 1, 4, 2, 1, 3 };
-        System.out.println(compare(heights));
+        int nums[] = { 7,3,1,0,0,6 };
+        arrayPairSum(nums);
+        printArray(nums);
+
     }
 }
