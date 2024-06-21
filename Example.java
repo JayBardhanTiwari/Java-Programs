@@ -1,21 +1,10 @@
-class Solution {
-    public static int subtractProductAndSum(int n) {
-        int sum=0;
-        int prod=1;
-        while(n>0)
-        {
-            int r=n%10;
-            prod=prod*r;
-            sum=sum+r;
-            n=n/10;
-        }
-        return prod-sum;
-    }
-
-
-    public static void main(String[] args) {
-        int n = 245;
-        System.out.println(subtractProductAndSum(n));
-    }
-    
-}
+public class StringExample{    
+public static void main(String args[]){    
+String s1="java";//creating string by Java string literal    
+char ch[]={'s','t','r','i','n','g','s'};    
+String s2=new String(ch);//converting char array to string    
+String s3=new String("example");//creating Java string by new keyword    
+System.out.println(s1);    
+System.out.println(s2);    
+System.out.println(s3);    
+}}    
