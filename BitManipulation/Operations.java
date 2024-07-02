@@ -1,7 +1,7 @@
 package BitManipulation;
 
 public class Operations {
-    // 1. get ith bit
+    // 1. Get ith bit 
     public static int getIthbit(int n, int i) {
         int bitmask = 1 << i;
         if ((n & bitmask) == 0) {
