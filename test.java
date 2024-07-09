@@ -15,6 +15,6 @@ public class test {
 
     public static void main(String[] args) {
         String sb[] = {"please wait", "continue to fight", "continue to win"};
-        System.out.println(count(sb)); // This should output 4
+        System.out.println(count(sb));
     }
 }
