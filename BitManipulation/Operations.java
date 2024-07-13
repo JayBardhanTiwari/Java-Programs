@@ -40,6 +40,7 @@ public class Operations {
         return n | bitmask;
 
     }
+    //clear ith bits
     public static int clearIbit(int n , int i){
         int bitmask =  (~0)<<i;
         return n & bitmask;
