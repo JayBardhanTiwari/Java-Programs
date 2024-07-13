@@ -26,7 +26,7 @@ public class Operations {
 
     // update bit
     public static int updateIthbit(int n, int i, int newbit) {
-        //first approach
+        // first approach
 
         // if (newbit == 0) {
         // return clearIthbit(n, i);
@@ -34,16 +34,26 @@ public class Operations {
         // return setIthbit(n, i);
         // }
 
-        //second approach
+        // second approach
         n = clearIthbit(n, i);
         int bitmask = newbit << i;
         return n | bitmask;
 
     }
-    //clear ith bits
-    public static int clearIbit(int n , int i){
-        int bitmask =  (~0)<<i;
+
+    // clear ith bits
+    public static int clearIbit(int n, int i) {
+        int bitmask = (~0) << i;
         return n & bitmask;
+    }
+
+    // clear ith bits in range
+    public static int clearithbitsinRange(int n, int i, int j) {
+        int a = (~0) << j + 1;
+        int b = (1 << i) - 1;
+        int bitmask = a | b;
+        return n & bitmask;
+
     }
 
     public static void main(String[] args) {
@@ -51,7 +61,8 @@ public class Operations {
         // System.out.println(setIthbit(10, 2));
         // System.out.println(clearIthbit(10, 1));
         // System.out.println(updateIthbit(10, 2, 1));
-        System.out.println(clearIbit(15, 2));
+        // System.out.println(clearIbit(15, 2));
+        System.out.println(clearithbitsinRange(10, 2, 4));
 
     }
 }
