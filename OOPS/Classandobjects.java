@@ -11,6 +11,8 @@ public class Classandobjects {
 
         p1.setColor("black");
         System.out.println(p1.color);
+        // another way to access the properties of class
+        p1.color = " red";
     }
 }
 
