@@ -10,6 +10,7 @@ public class Inheritance {
     }
 }
 
+// Base class
 class Animal {
     String color;
 
@@ -22,6 +23,7 @@ class Animal {
     }
 }
 
+// Derived class / subclass
 class Fish extends Animal {
     int fins;
 
