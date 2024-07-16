@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package OOPS;
 
 public class Inheritance {
     public static void main(String[] args) {
@@ -29,11 +29,11 @@ class Animal {
 }
 
 // Derived class / subclass
-// class Fish extends Animal {
-//     int fins;
+class Fish extends Animal {
+    int fins;
 
-//     void swim() {
-//         System.out.println("Swiming");
-//     }
+    void swim() {
+        System.out.println("Swiming");
+    }
 
-// }
+}
