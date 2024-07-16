@@ -1,18 +1,16 @@
- class Example2 {
-public static void main(String[] args) {
-    
-    student std = new student();
-    // std.getClass();
-    System.out.println(std.name);
-    System.out.println(std.age);
-    
-}
+class Example2 {
 
+    public static void changeA(int a) {
 
+        int b = a;
+    }
 
-}
+    public static void main(String[] args) {
 
-class student{
-    String name = "jay";
-    int age = 24;
+        int a = 5;
+        changeA(a);
+        System.out.println(a);
+
+    }
+
 }
