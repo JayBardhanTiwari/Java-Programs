@@ -9,13 +9,14 @@ public class Inheritance {
         System.out.println(max.legs);
         max.breed = "German sherpherd";
         System.out.println(max.breed);
+        Bird peacock = new Bird();
+        peacock.eat();
+        peacock.fly();
 
     }
 }
 
 // Types of inheritance
-
-// This is single level inheritance
 
 // Base class
 class Animal {
@@ -30,6 +31,16 @@ class Animal {
     }
 }
 
+// Derived class / subclass
+// This is single level inheritance
+
+// class Fish extends Animal {
+// int fins;
+// void swim() {
+// System.out.println("Swiming");
+// }
+// }
+
 // This is actually multilevel inheritance
 class Mammal extends Animal {
 
@@ -42,12 +53,18 @@ class Dog extends Mammal {
 
 }
 
-// Derived class / subclass
-// class Fish extends Animal {
-// int fins;
+// This is Hierarchial inheritance
+class Fish extends Animal {
 
-// void swim() {
-// System.out.println("Swiming");
-// }
+    void swim() {
+        System.out.println("Swim");
+    }
+}
 
-// }
+class Bird extends Animal {
+
+    void fly() {
+        System.out.println("fly");
+    }
+
+}
