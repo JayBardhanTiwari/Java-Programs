@@ -10,6 +10,11 @@ public class Inheritance {
     }
 }
 
+// Types of inheritance
+
+//This is single level inheritance
+
+
 // Base class
 class Animal {
     String color;
@@ -24,11 +29,11 @@ class Animal {
 }
 
 // Derived class / subclass
-class Fish extends Animal {
-    int fins;
+// class Fish extends Animal {
+//     int fins;
 
-    void swim() {
-        System.out.println("Swiming");
-    }
+//     void swim() {
+//         System.out.println("Swiming");
+//     }
 
-}
+// }
