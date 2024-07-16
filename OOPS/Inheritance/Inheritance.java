@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Inheritance;
 
 public class Inheritance {
     public static void main(String[] args) {

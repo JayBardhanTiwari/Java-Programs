@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Constructor;
 
 public class Constructor {
     public static void main(String[] args) {
