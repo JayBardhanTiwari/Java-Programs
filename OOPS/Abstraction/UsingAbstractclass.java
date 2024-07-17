@@ -1,6 +1,6 @@
-package OOPS;
+package OOPS.Abstraction;
 
-public class Abstraction {
+public class UsingAbstractclass {
 
     // Abstraction
     // To implement abstraction it consists two ways
