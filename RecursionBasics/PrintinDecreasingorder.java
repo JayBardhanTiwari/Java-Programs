@@ -4,7 +4,7 @@ public class PrintinDecreasingorder {
 
     public static void printDec(int n) {
         if (n == 1) {       //stops when n = 1 
-            System.out.println(1);
+            System.out.println(n);
             return;
         }
         System.out.print(n + " ");
