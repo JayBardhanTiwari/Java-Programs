@@ -1,75 +1,46 @@
-public class Test {
+import java.util.*;
+
+class Complex {
+    int real;
+    int imag;
+
+    public Complex(int r, int i) {
+        real = r;
+        imag = i;
+    }
+
+    public static Complex add(Complex a, Complex b) {
+        return new Complex((a.real + b.real), (a.imag + b.imag));
+    }
+
+    public static Complex diff(Complex a, Complex b) {
+        return new Complex((a.real - b.real), (a.imag - b.imag));
+    }
+
+    public static Complex product(Complex a, Complex b) {
+        return new Complex(((a.real * b.real) - (a.imag * b.imag)), ((a.real * b.imag) + (a.imag * b.real)));
+    }
+
+    public void printComplex() {
+        if (real == 0 && imag != 0) {
+            System.out.println(imag + "i");
+        } else if (imag == 0 && real != 0) {
+            System.out.println(real);
+        } else {
+            System.out.println(real + "+" + imag + "i");
+        }
+    }
+}
+
+class Solution {
     public static void main(String[] args) {
-
-        Human hm = new Human();
-        hm.walk();
-        hm.selfish();
-        hm.eat();
-
-    }
-}
-
-class Animal {
-    String color;
-
-    void eat() {
-        System.out.println("eating");
-    }
-
-    void breath() {
-        System.out.println("breathing");
-    }
-}
-
-class Fish extends Animal {
-    void swim() {
-        System.out.println("swiming");
-    }
-
-}
-
-class Bird extends Animal {
-    void fly() {
-        System.out.println("flying");
-    }
-
-}
-
-class Mammals extends Animal {
-    void walk() {
-        System.out.println("walking");
-    }
-
-}
-
-class Tuna extends Fish {
-
-}
-
-class Shark extends Fish {
-
-}
-
-class Peacock extends Bird {
-    void dance() {
-        System.out.println("dancing in rain");
-    }
-}
-
-class Dog extends Mammals {
-    void bark() {
-        System.out.println("barking");
-    }
-}
-
-class Cat extends Mammals {
-    void meow() {
-        System.out.println("mewoing");
-    }
-}
-
-class Human extends Mammals {
-    void selfish() {
-        System.out.println("selfish as fuck");
+        Complex c = new Complex(4, 5);
+        Complex d = new Complex(9, 4);
+        Complex e = Complex.add(c, d);
+        Complex f = Complex.diff(c, d);
+        Complex g = Complex.product(c, d);
+        e.printComplex();
+        f.printComplex();
+        g.printComplex();
     }
 }
