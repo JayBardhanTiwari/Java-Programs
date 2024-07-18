@@ -6,7 +6,7 @@ public class Fibonaccinumber {
         if (n == 0 || n == 1) {
             return n;
         }
-        // Formula fn = f(n-1) + f(n-2);
+        // Formula of Fibonacci -> fn = f(n-1) + f(n-2);
         int fnm1 = findFibo(n - 1);
         int fnm2 = findFibo(n - 2);
 
