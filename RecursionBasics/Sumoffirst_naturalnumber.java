@@ -6,6 +6,7 @@ public class Sumoffirst_naturalnumber {
             return 1;
         }
         int Snm = sumNatural(n - 1);
+        // int Sn = n + sumNatural(n-1);
         int Sn = n + Snm;
 
         return Sn;
