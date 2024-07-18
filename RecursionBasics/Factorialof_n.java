@@ -9,7 +9,8 @@ public class Factorialof_n {
         }
 
         int Fnm = findFac(n - 1);
-        int Fn = n * findFac(n - 1);
+        // int Fn = n * findFac(n - 1);
+        int Fn = n * Fnm;
 
         return Fn;
     }
