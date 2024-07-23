@@ -2,13 +2,15 @@ package RecursionBasics.Questions;
 
 public class Lengthofstring {
     public static int printlengthofString(String str, int i) {
+        // better approach  O(n)
         // base case
         if (str.length() == i) {
             return i;
         }
         return printlengthofString(str, i + 1);
 
-        // base case
+        // base case 0(n^2) because it is making a new string when
+        // recursive fun call
         // if (str.length() == 0) {
         // return 0;
         // }
