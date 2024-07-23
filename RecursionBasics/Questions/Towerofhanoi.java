@@ -17,7 +17,7 @@ public class Towerofhanoi {// 0(2^n)
 
     public static void main(String[] args) {
         int n = 3;
-        moveDisks(n, "A", "B", "C");
+        moveDisks(n, "S", "H", "D");
 
     }
 }
