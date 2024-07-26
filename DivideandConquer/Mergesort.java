@@ -52,17 +52,16 @@ class Mergesort {
 
         }
         // copy temp to original array
-        for (k = 0, i = si; k < temp.length; k++, i++) {
+        for (k = 0, i = si; i<=ei; k++, i++) {
             arr[i] = temp[k];
         }
 
     }
 
     public static void main(String[] args) {
-        int arr[] = { 6, 3, 9, 5, 2, 8 };
+        int arr[] = { 5,1,1,2,0,0 };
         mergeSort(0, arr.length - 1, arr);
         printArr(arr);
 
     }
-
 }
