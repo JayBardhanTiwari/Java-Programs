@@ -10,10 +10,12 @@ public class Permutation {
 
         // recursion
         for (int i = 0; i < str.length(); i++) {
+            // "abcde" = "ab" + "de" = "abde"
             // fetching a char in string abc
             char currChar = str.charAt(i);
             // remove that char in string
             String newStr = str.substring(0, i) + str.substring(i + 1);
+            // add to new String
             findPermutation(newStr, ans + currChar);
         }
 
