@@ -3,21 +3,47 @@ package ArrayList;
 import java.util.ArrayList;
 
 public class Containerwithmostwater {
+    // public static int storeWater(ArrayList<Integer> height) {
+
+    // // brute force approach-- O(n^2)
+    // int maxWater = 0;
+    // for (int i = 0; i < height.size(); i++) {
+    // for (int j = i + 1; j < height.size(); j++) {
+    // int ht = Math.min(height.get(i), height.get(j));
+    // int width = j - i;
+
+    // int currWater = ht * width;
+    // maxWater = Math.max(maxWater, currWater);
+    // }
+
+    // }
+    // return maxWater;
+    // }
+
+    // 2 pointer approach -- O(n)
     public static int storeWater(ArrayList<Integer> height) {
-
-        // brute force approach-- O(n^2)
         int maxWater = 0;
-        for (int i = 0; i < height.size(); i++) {
-            for (int j = i + 1; j < height.size(); j++) {
-                int ht = Math.min(height.get(i), height.get(j));
-                int width = j - i;
+        int lp = 0;// left pointer
+        int rp = height.size() - 1;// right pointer
 
-                int currWater = ht * width;
-                maxWater = Math.max(maxWater, currWater);
+        while (lp < rp) {
+            // calculate water area
+            int ht = Math.min(height.get(lp), height.get(rp));
+            int width = rp - lp;
+            int currWater = ht * width;
+
+            maxWater = Math.max(maxWater, currWater);
+
+            // update pointer
+            if (lp < rp) {
+                lp++;
+            } else {
+                rp--;
             }
 
         }
         return maxWater;
+
     }
 
     public static void main(String[] args) {
