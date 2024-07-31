@@ -35,7 +35,7 @@ public class Containerwithmostwater {
             maxWater = Math.max(maxWater, currWater);
 
             // update pointer
-            if (lp < rp) {
+            if (height.get(lp) < height.get(rp)) {
                 lp++;
             } else {
                 rp--;
