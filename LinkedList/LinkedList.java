@@ -52,13 +52,28 @@ public class LinkedList {
         tail = newNode;
     }
 
+    public void print() {
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + "-->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
     public static void main(String[] args) {
         // initialization of linked list
         LinkedList ll = new LinkedList();
+        ll.print();
         ll.addFirst(2);
+        ll.print();
         ll.addFirst(1);
+        ll.print();
         ll.addLast(3);
+        ll.print();
         ll.addLast(4);
+        ll.print();
 
     }
 
