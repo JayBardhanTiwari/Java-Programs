@@ -13,9 +13,10 @@ public class LinkedList {
 
     }
 
-    // head n tail
+    // head n tail n Size
     public static Node head;
     public static Node tail;
+    public static int size;
 
     // we dont need to make a func static because we r not calling direct func in
     // main func we are calling through objects which are static already
@@ -23,6 +24,7 @@ public class LinkedList {
     public void addFirst(int data) {
         // step1 making a new node
         Node newNode = new Node(data);
+        size++;
         if (head == null) {
             head = tail = newNode;
             return;
@@ -39,6 +41,7 @@ public class LinkedList {
     public void addLast(int data) {
         // step 1 making a new node
         Node newNode = new Node(data);
+        size++;
 
         // when empty head
         if (head == null) {
@@ -66,6 +69,7 @@ public class LinkedList {
         Node newNode = new Node(data);
         Node temp = head;
         int i = 0;
+        size++;
 
         // base case
         if (idx == 0) {
@@ -92,9 +96,9 @@ public class LinkedList {
         ll.addFirst(1);
         ll.addLast(3);
         ll.addLast(4);
-
         ll.add(2, 9);
         ll.print();
+        System.out.println(ll.size);
 
     }
 
