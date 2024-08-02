@@ -33,13 +33,32 @@ public class LinkedList {
 
         // step3 head = newNode
         head = newNode;
+
+    }
+
+    public void addLast(int data) {
+        // step 1 making a new node
+        Node newNode = new Node(data);
+
+        // when empty head
+        if (head == null) {
+            head = tail = newNode;
+        }
+
+        // step 2 tail next point to newNode
+        tail.next = newNode;
+
+        // step 3 newNode become tail
+        tail = newNode;
     }
 
     public static void main(String[] args) {
         // initialization of linked list
         LinkedList ll = new LinkedList();
-        ll.addFirst(1);
         ll.addFirst(2);
+        ll.addFirst(1);
+        ll.addLast(3);
+        ll.addLast(4);
 
     }
 
