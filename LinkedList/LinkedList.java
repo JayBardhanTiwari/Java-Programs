@@ -214,15 +214,64 @@ public class LinkedList {
         return;
     }
 
+    // check if linked list is palindrome or not
+
+    public Node findmid(Node head) {// healper function
+        // slow - fast approach
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;// +1
+            fast = fast.next.next;// +2
+        }
+        return slow;// slow is my middle Node
+
+    }
+
+    public boolean checkPalindrome() {
+
+        // base case
+        if (head == null || head.next == null) {
+            return true;
+        }
+        // step 1 find midNode
+        Node midNode = findmid(head);
+
+        // step 2 reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        Node right = prev;// right half head
+        Node left = head;
+
+        // step 3 check if first half is equals to right half
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         // initialization of linked list
         LinkedList ll = new LinkedList();
-        ll.addFirst(2);
-        ll.addFirst(1);
-        ll.addLast(4);
-        ll.addLast(5);
-        ll.add(2, 3);
-        ll.print();
+
+        // ll.addFirst(2);
+        // ll.addFirst(1);
+        // ll.addLast(4);
+        // ll.addLast(5);
+        // ll.add(2, 3);
         // System.out.println(ll.size);
         // ll.removeFirst();
         // ll.print();
@@ -237,8 +286,16 @@ public class LinkedList {
         // ll.reverse();
         // ll.print();
 
-        ll.deleteNthfromEnd(3);
+        // ll.deleteNthfromEnd(3);
+        // ll.print();
+
+        ll.addFirst(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
         ll.print();
+        System.out.println(ll.checkPalindrome());
+
     }
 
 }
