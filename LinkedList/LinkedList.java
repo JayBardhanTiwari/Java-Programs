@@ -152,6 +152,27 @@ public class LinkedList {
         return -1;
     }
 
+    public int helper(Node head, int key) {// helper function
+        // base case
+        if (head == null) {
+            return -1;
+        }
+
+        if (head.data == key) {
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if (idx == -1) {
+            return -1;
+        }
+
+        return idx + 1;
+    }
+
+    public int recSearch(int key) {// recursion function
+        return helper(head, key);
+    }
+
     public static void main(String[] args) {
         // initialization of linked list
         LinkedList ll = new LinkedList();
@@ -168,8 +189,11 @@ public class LinkedList {
         // ll.print();
         // System.out.println(ll.size);
 
-        System.out.println(ll.itrSearch(3));
-        System.out.println(ll.itrSearch(15));
+        // System.out.println(ll.itrSearch(3));
+        // System.out.println(ll.itrSearch(15));
+        System.out.println(ll.recSearch(3));
+        System.out.println(ll.recSearch(15));
+
     }
 
 }
