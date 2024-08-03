@@ -173,14 +173,30 @@ public class LinkedList {
         return helper(head, key);
     }
 
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;// assignment in java right to left
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;// step 1
+            curr.next = prev;// step 2
+            prev = curr;// step 3
+            curr = next;// step 4
+
+        }
+        head = prev;// last step curr becomes null so prev becomes head
+
+    }
+
     public static void main(String[] args) {
         // initialization of linked list
         LinkedList ll = new LinkedList();
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(3);
         ll.addLast(4);
-        ll.add(2, 9);
+        ll.addLast(5);
+        ll.add(2, 3);
         ll.print();
         // System.out.println(ll.size);
         // ll.removeFirst();
@@ -191,9 +207,10 @@ public class LinkedList {
 
         // System.out.println(ll.itrSearch(3));
         // System.out.println(ll.itrSearch(15));
-        System.out.println(ll.recSearch(3));
-        System.out.println(ll.recSearch(15));
-
+        // System.out.println(ll.recSearch(3));
+        // System.out.println(ll.recSearch(15));
+        ll.reverse();
+        ll.print();
     }
 
 }
