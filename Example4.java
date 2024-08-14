@@ -9,25 +9,25 @@ public class Example4 {
 
     }
 
-    // public static int calWater(ArrayList<Integer> height){
+     public static int calWater(ArrayList<Integer> height){
 
-    // brute force
+     brute force
 
-    // int maxWater = 0;
+     int maxWater = 0;
 
-    // for(int i =0;i<height.size();i++){
-    // for(int j=i+1;j<height.size();j++){
-    // int ht = Math.min(height.get(i),height.get(j));
-    // int width = j-i;
+    for(int i =0;i<height.size();i++){
+     for(int j=i+1;j<height.size();j++){
+    int ht = Math.min(height.get(i),height.get(j));
+    int width = j-i;
 
-    // int currWater = ht * width;
+    int currWater = ht * width;
 
-    // maxWater = Math.max(maxWater, currWater);
-    // }
-    // }
-    // return maxWater;
+     maxWater = Math.max(maxWater, currWater);
+     }
+    }
+     return maxWater;
 
-    // }
+    }
     public static int calWater(ArrayList<Integer> height) {
 
         int maxWater = 0;
