@@ -1,0 +1,37 @@
+public class LemonadeChange {
+    public boolean lemonadeChange(int[] bills) {
+        // Keep track of the number of $5 and $10 bills we have
+        int fiveDollarBills = 0;
+        int tenDollarBills = 0;
+        
+        // Process each customer's payment
+        for (int bill : bills) {
+            if (bill == 5) {
+                // Customer pays with a $5 bill; we just add it to our collection
+                fiveDollarBills++;
+            } else if (bill == 10) {
+                // Customer pays with a $10 bill; we need to give $5 in change
+                if (fiveDollarBills > 0) {
+                    fiveDollarBills--;
+                    tenDollarBills++;
+                } else {
+                    return false; // Cannot give $5 in change
+                }
+            } else if (bill == 20) {
+                // Customer pays with a $20 bill; we need to give $15 in change
+                if (tenDollarBills > 0) {
+                    // Prefer to give a $10 bill and $5 bill if we have a $10 bill
+                    tenDollarBills--;
+                } else if (fiveDollarBills >= 3) {
+                    // Otherwise, give three $5 bills
+                    fiveDollarBills -= 3;
+                } else {
+                    return false; // Cannot give $15 in change
+                }
+            }
+        }
+        
+        // If we processed all bills successfully, return true
+        return true;
+    }
+}
