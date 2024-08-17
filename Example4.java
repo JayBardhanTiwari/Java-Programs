@@ -65,7 +65,7 @@ public class Example4 {
         height.add(8);
         height.add(3);
         height.add(7);
-        // System.out.println(calWater(height));
+        
         System.out.println(calWater(height));
 
         // ArrayList<ArrayList<Integer>> mainlist = new ArrayList<>();
