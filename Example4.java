@@ -70,9 +70,7 @@ public class Example4 {
 
         // ArrayList<ArrayList<Integer>> mainlist = new ArrayList<>();
 
-        // ArrayList<Integer> list = new ArrayList<>();
-        // ArrayList<Integer> list2 = new ArrayList<>();
-        // ArrayList<Integer> list3 = new ArrayList<>();
+        
 
         // // insert values
         // for (int i = 1; i <= 5; i++) {
