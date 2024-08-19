@@ -68,7 +68,7 @@ public class Example4 {
         
         System.out.println(calWater(height));
 
-        // ArrayList<ArrayList<Integer>> mainlist = new ArrayList<>();
+       
 
         
 
