@@ -141,32 +141,7 @@ public class Example2 {
     }
 
     public static void main(String[] args) {
-        // int arr[] = new int[5];
-        // backtrackArray(arr, 0, 1);
-        // printArr(arr);
-        // subsetString("abc", "", 0);
-        // permutationString("abc", " ");
 
-        // N- QUEENS QUESTION
-        // int n = 4;
-
-        // char board[][] = new char[n][n];
-
-        // // intialization
-        // for (int i = 0; i < n; i++) {
-        // for (int j = 0; j < n; j++) {
-        // board[i][j] = 'x';
-        // }
-        // }
-        // nQueens(board, 0);
-        // // System.out.println(count);
-        // // printBoard(board);//
-        // if (nQueens(board, n)) {
-        // System.out.println("solution is possible");
-        // printBoard(board);
-        // } else {
-        // System.out.println("solution is not possible ");
-        // }
 
         // GRID WAYS
         int n = 3;// rows
