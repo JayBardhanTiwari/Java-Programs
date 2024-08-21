@@ -181,20 +181,7 @@ public class Example3 {
     }
 
     public static void main(String[] args) {
-        // recursion
-        // printDec(5);
-        // printInc(5);
-        // System.out.println(findFac(5));
-        // System.out.println(sumofNatural(10));
-        // System.out.println(findFibonacci(10));
-        // int arr[] = { 1, 3, 2, 4, 5, 2 ,3};
-        // System.out.println(isSorted(0, arr));
-        // System.out.println(firsOccurence(0, 2, arr));
-        // System.out.println(lastOccurence(0, 3, arr));
-        // System.out.println(printPower(3, 3));
-        // System.out.println(printTiles(4));
-        // String str = "jaaybaardhhantiwarii";
-        // removeDuplicate(str, new StringBuilder(""), 0, new boolean[26]);
+    
         System.out.println(printWays(3));
     }
 }
